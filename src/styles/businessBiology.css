@@ -1,0 +1,59 @@
+.business-biology {
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  margin: 0 auto;
+}
+
+.card {
+  background: transparent;
+  width: 704px;
+  text-align: center;
+  margin-top: 128px;
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-bottom: 64px;
+}
+
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  margin-bottom: 64px;
+}
+
+.card p {
+  font-size: 20px;
+  line-height: 135%;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: var(--primary-color);
+  margin-bottom: 128px;
+}
+
+.card button {
+  background-color: var(--accent-color);
+  width: 135px;
+  height: 43px;
+  color: var(--primary-color);
+  border: none;
+  padding: 8px 32px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
