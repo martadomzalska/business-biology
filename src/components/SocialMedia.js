@@ -36,7 +36,7 @@ function SocialMedia() {
         <div className="icons-separator">
           <Image src="Instagram.svg" alt="Instagram" width={48} height={48} />
           <span></span>
-          <Image src="Linkedin.svg" alt="LinkedIn" width={48} height={48} />
+          <Image src="/LinkedIn.svg" alt="LinkedIn" width={48} height={48} />
         </div>
 
         <div className="platform-block">

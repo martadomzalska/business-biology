@@ -9,11 +9,16 @@ const Footer = () => {
         <div className="footer-column left">
           <div className="footer-social">
             <span>Instagram</span>
-            <Image src="Instagram.svg" alt="Instagram" width={48} height={48} />
+            <Image
+              src="/Instagram.svg"
+              alt="Instagram"
+              width={48}
+              height={48}
+            />
           </div>
           <div className="footer-social">
             <span>LinkedIn</span>
-            <Image src="Linkedin.svg" alt="LinkedIn" width={48} height={48} />
+            <Image src="/LinkedIn.svg" alt="LinkedIn" width={48} height={48} />
           </div>
         </div>
 

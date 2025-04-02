@@ -19,7 +19,7 @@ const Header = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image src="/Linkedin.svg" alt="LinkedIn" width={32} height={32} />
+          <Image src="/LinkedIn.svg" alt="LinkedIn" width={32} height={32} />
         </a>
       </div>
 
