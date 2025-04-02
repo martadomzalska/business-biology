@@ -1,17 +1,25 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import css from "./globals.css";
+import BusinessBiology from "@/components/BusinessBiology";
+import Projects from "@/components/Projects";
+import ValuesSection from "@/components/ValuesSection";
+import SocialMedia from "@/components/SocialMedia";
+import Timeline from "@/components/Timeline";
+import Goals from "@/components/Goals";
+import FeedbackPannel from "@/components/FeedbackPannel";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <div className={styles.ctas}>
-          <div className="p-8">
-            <h1 className="text-2xl font-bold">Witaj na stronie głównej!</h1>
-            <p>still in progress...</p>
-          </div>
-        </div>
-      </main>
+    <div>
+      <BusinessBiology />
+      <Projects />
+      <ValuesSection />
+      <SocialMedia />
+      <Timeline />
+      <Goals />
+      <FeedbackPannel />
+
       <footer className={styles.footer}></footer>
     </div>
   );
