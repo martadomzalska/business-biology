@@ -1,0 +1,128 @@
+.background {
+  background-color: var(--background-color);
+}
+.feedback-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  width: 567px;
+  height: 256px;
+  background: #dcdcdc;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* overflow: hidden; */
+  margin-left: 30px;
+}
+
+.feedback-section {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* margin-top: 64px;
+  margin-bottom: 96px; */
+  gap: 16px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 3000px;
+  overflow: hidden;
+  /* animation: scrollSlider 20s linear infinite; */
+}
+
+.feedback-section:hover {
+  animation-play-state: paused;
+}
+
+.scroll-slow {
+  animation: scrollLeft 20s linear infinite;
+}
+
+.scroll-fast {
+  animation: scrollLeft 15s linear infinite;
+}
+
+/* Odwraca kierunek */
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Animacja w lewo */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Animacja w prawo */
+@keyframes scrollRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+@keyframes scrollSlider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.feedback-carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+.testimonial-img {
+  width: 256px;
+}
+.imageWrapper {
+  flex: none;
+  width: 256px;
+  height: 256px;
+}
+
+.testimonial-img {
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.card-info-name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+  margin: 0;
+  letter-spacing: -0.011em;
+  text-align: left;
+  color: #081c15;
+}
+.description {
+  /* Lorem ipsum dolor sit amet consectetur. Eu lobortis integer vitae consectetur mi sed aliquet sed... */
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 135%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  text-align: left;
+  width: 279px;
+  height: 96px;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 16px;
+  gap: 32px;
+  height: 256px;
+  box-sizing: border-box;
+}
