@@ -22,7 +22,7 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--background-color);
   font-family: var(--font-base);
   line-height: 135%;
   letter-spacing: 1%;
@@ -45,6 +45,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 91px;
+  cursor: pointer;
 }
 
 a {
