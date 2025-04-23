@@ -1,0 +1,73 @@
+.paragraph {
+  width: 384px;
+  height: 144px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+  position: absolute;
+}
+.timeline-section {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 128px;
+  margin-bottom: 160px;
+  position: relative;
+}
+
+.spiral {
+  margin-bottom: 30px;
+}
+.timelineImg {
+  border-radius: 52%;
+  position: absolute;
+}
+
+.first {
+  top: 110px;
+  left: 100px;
+}
+
+.second {
+  top: 800px;
+  right: 100px;
+}
+
+.third {
+  bottom: 20px;
+  left: 100px;
+}
+
+.one {
+  top: 280px;
+  right: 170px;
+  align-content: left;
+}
+
+.two {
+  top: 550px;
+  right: 170px;
+}
+
+.three {
+  top: 800px;
+  left: 170px;
+  text-align: right;
+}
+.four {
+  top: 1050px;
+  left: 170px;
+  text-align: right;
+}
+
+.five {
+  bottom: 250px;
+  right: 170px;
+}
+.six {
+  bottom: 10px;
+  right: 170px;
+}
