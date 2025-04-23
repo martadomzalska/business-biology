@@ -1,0 +1,41 @@
+.goals-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 96px;
+  padding-bottom: 128px;
+  gap: 261px;
+  background-color: var(--background-color);
+}
+
+.goal {
+  width: 282px;
+  height: 467px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.button {
+  width: 103px;
+  height: 36px;
+  background-color: var(--accent-color);
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.paragraphh {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: -1.1%;
+  /* width: 218px;
+  height: 40px; */
+}
