@@ -8,21 +8,18 @@ import "../styles/projectsSection.css";
 
 const projects = [
   {
-    title: "Projekt 1",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Eu lobortis integer vitae consectetur mi sed aliquet sed... ",
+    title: "Kompetencje bycia człowiekiem",
+    description: "Bycie człowiekiem - instrukcja ",
     image: "/project-1.svg",
   },
   {
-    title: "Projekt 2",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Eu lobortis integer vitae consectetur mi sed aliquet sed... ",
+    title: "Ekosystem sukcesu",
+    description: "Rozwój i dobrostan - szkolenia",
     image: "/project-2.svg",
   },
   {
-    title: "Projekt 3",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Eu lobortis integer vitae consectetur mi sed aliquet sed... ",
+    title: "Tu i Teraz",
+    description: "Przywództwo i dobrostan - rozmowy ",
     image: "/project-3.svg",
   },
 ];
@@ -41,10 +38,12 @@ const ProjectsSection = () => {
 
   return (
     <section className="projects-section">
-      <SectionTitle onClick={handleToggle}>Projekty</SectionTitle>
+      <SectionTitle onClick={handleToggle}>
+        Projekty, które pielęgnuję{" "}
+      </SectionTitle>
       {isOpen && (
         <>
-          <div className="carousel-wrapper">
+          {/* <div className="carousel-wrapper">
             <button
               className="nav-button left"
               onClick={() => instanceRef.current?.prev()}
@@ -55,41 +54,44 @@ const ProjectsSection = () => {
                 width={24}
                 height={553}
               />
-            </button>
+            </button> */}
 
-            <div ref={sliderRef} className="keen-slider">
-              {projects.map((project, index) => (
-                <div className="keen-slider__slide project-slide" key={index}>
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    width={256}
-                    height={256}
-                    className="project-image"
-                  />
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                  <a href="#" className="project-link">
-                    zobacz
-                  </a>
-                </div>
-              ))}
-            </div>
-
-            <button
-              className="nav-button right"
-              onClick={() => instanceRef.current?.next()}
-            >
-              <Image
-                src="/right-slider.svg"
-                alt="right-slider"
-                width={24}
-                height={553}
-              />
-            </button>
+          <div ref={sliderRef} className="keen-slider">
+            {projects.map((project, index) => (
+              <div
+                className="keen-slider__slide project-slide projects"
+                key={index}
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={200}
+                  height={200}
+                  className="project-image"
+                />
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <a href="#" className="project-link">
+                  rozwiń
+                </a>
+              </div>
+            ))}
           </div>
 
-          <button className="all-projects-button">wszystkie projekty</button>
+          <button
+            className="nav-button right"
+            onClick={() => instanceRef.current?.next()}
+          >
+            <Image
+              src="/right-slider.svg"
+              alt="right-slider"
+              width={24}
+              height={553}
+            />
+          </button>
+          {/* </div> */}
+
+          {/* <button className="all-projects-button">wszystkie projekty</button> */}
         </>
       )}
     </section>
