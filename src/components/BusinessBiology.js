@@ -3,6 +3,7 @@
 import { useState } from "react";
 import "../styles/businessBiology.css";
 import SectionTitle from "./SectionTitle";
+import Image from "next/image";
 
 const BusinessBiology = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -12,28 +13,34 @@ const BusinessBiology = () => {
   }
   return (
     <section className="business-biology">
-      <SectionTitle onClick={handleToggle}>Business Biology</SectionTitle>
+      <SectionTitle onClick={handleToggle}>
+        To moment, którym się spotykamy
+      </SectionTitle>
       {isOpen && (
         <div className="cards-wrapper">
           <div className="card right">
-            <h3>Biology</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Sollicitudin odio egestas
-              leo pharetra purus sed mauris. Sollicitudin odio egestas leo
-              pharetra purus sed mauris. Sollicitudin odio egestas leo pharetra
-              purus sed mauris.
-            </p>
-            <button>button</button>
+            <div className="card-div">
+              <Image
+                className="karolinaPic"
+                src="./karolina.svg"
+                alt="karolina"
+                width={301}
+                height={400}
+              />
+
+              <p>Pomagam ludziom wzrastać. Chwila po chwili.</p>
+            </div>
           </div>
           <div className="card left">
-            <h3>Business</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Sollicitudin odio egestas
-              leo pharetra purus sed mauris. Sollicitudin odio egestas leo
-              pharetra purus sed mauris. Sollicitudin odio egestas leo pharetra
-              purus sed mauris.
+              Może właśnie zmieniasz kierunek. Albo budujesz coś od nowa. <br />
+              Może prowadzisz zespół. Albo siebie - przez coś, co wymaga
+              uważności, odwagi i wsparcia. <br />
+              Pracuję z tymi, którzy chcą pracować inaczej - bez przeciążenia,
+              bez chaosu, bez utraty siebie. <br /> Mentoring, który opiera się
+              na nauce. Szkolenia, które prowadzą do zmiany. <br /> Zwinność,
+              która bierze pod uwagę człowieka.
             </p>
-            <button>button</button>
           </div>
         </div>
       )}
