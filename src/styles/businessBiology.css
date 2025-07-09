@@ -7,53 +7,67 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
-
   margin: 0 auto;
+  margin-bottom: 96px;
 }
 
 .card {
   background: transparent;
-  width: 704px;
+  width: 50%;
   text-align: center;
-  margin-top: 128px;
+  /* margin-top: clamp(2rem, 6.67vw, 7.11rem); */
+  /* padding-left: 64px;
+  padding-right: 64px;
+  padding-bottom: 64px; */
+}
+
+.card p {
+  /* margin-top: clamp(2.5rem, 8vw, 8.61rem); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(16px, 0.9375vw, 18px);
+  line-height: 128%;
+  font-weight: 200;
+  /* padding: clamp(1.5rem, 3.33vw, 3.555rem); */
+  color: var(--primary-color);
+}
+/* 
+.left {
+  margin-top: clamp(2.5rem, 8vw, 8.61rem);
+} */
+.right {
+  padding-top: clamp(2rem, 6.67vw, 7.11rem);
   padding-left: 64px;
   padding-right: 64px;
   padding-bottom: 64px;
 }
 
-.right {
-  text-align: right;
+.card-div {
+  width: 84.4%;
+  max-width: 702px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.left {
-  text-align: left;
-}
-.card h3 {
-  font-size: 24px;
-  margin-bottom: 16px;
-  font-weight: 600;
+
+.karolinaPic {
+  width: 100%;
+  max-width: 301px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 64px;
 }
 
-.card p {
-  font-size: 20px;
-  line-height: 135%;
-  padding-left: 16px;
-  padding-right: 16px;
-  color: var(--primary-color);
-  margin-bottom: 128px;
+.left p {
+  font-size: clamp(16px, 0.9375vw, 18px);
+  padding-top: clamp(32px, 3.33vw, 64px);
+  padding-bottom: clamp(32px, 3.33vw, 64px);
+  padding-left: clamp(32px, 3.33vw, 64px);
+  padding-right: clamp(64px, 6.9vw, 133px);
+  text-align: left;
 }
-
-.card button {
-  background-color: var(--accent-color);
-  width: 135px;
-  height: 43px;
-  color: var(--primary-color);
-  border: none;
-  padding: 8px 32px;
-  font-size: 20px;
-  font-weight: 500;
-  border-radius: 8px;
-  text-align: center;
-  cursor: pointer;
+.left {
+  margin-top: clamp(2.5rem, 8vw, 8.61rem);
+  margin-bottom: clamp(2.5rem, 8vw, 8.61rem);
 }
